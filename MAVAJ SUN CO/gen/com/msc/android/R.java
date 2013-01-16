@@ -16,9 +16,10 @@ public final class R {
         public static final int splash=0x7f020002;
     }
     public static final class id {
-        public static final int button1=0x7f080001;
-        public static final int menu_settings=0x7f080002;
-        public static final int textView1=0x7f080000;
+        public static final int addB=0x7f080001;
+        public static final int menu_settings=0x7f080003;
+        public static final int subB=0x7f080000;
+        public static final int tvD=0x7f080002;
     }
     public static final class layout {
         public static final int layout_counter=0x7f030000;

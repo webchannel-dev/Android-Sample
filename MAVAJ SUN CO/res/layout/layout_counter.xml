@@ -3,22 +3,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world"
-        tools:context=".Counter" />
+<Button
+    android:id="@+id/addB"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/addB"
+    android:layout_below="@+id/tvD"
+    android:layout_marginTop="29dp"
+    android:text="Sub"
+    android:textSize="20dp" />
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="25dp"
-        android:text="Button" />
+<TextView
+    android:id="@+id/tvD"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="174dp"
+    android:gravity="center"
+    android:text="Total : 0"
+    android:textSize="45dp" />
+
+<Button
+    android:id="@+id/subB"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/tvD"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="81dp"
+    android:text="Add"
+    android:textSize="20dp" />
 
 </RelativeLayout>
