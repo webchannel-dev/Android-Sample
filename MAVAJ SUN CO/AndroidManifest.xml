@@ -20,7 +20,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-  
         <activity
             android:name=".Counter"
             android:label="@string/title_activity_counter" >
@@ -30,14 +29,18 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        
-            <activity android:name=".Menu"
+        <activity
+            android:name=".Menu"
             android:label="@string/title_activity_counter" >
             <intent-filter>
                 <action android:name="com.msc.android.Menu" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Text"
+            android:label="@string/title_activity_counter" >
         </activity>
     </application>
 
