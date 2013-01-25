@@ -1,8 +1,11 @@
 package com.msc.android;
 
+import java.io.InputStream;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,6 +27,8 @@ public class Camera extends Activity implements View.OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.photo);
 		initialize();
+		InputStream is = getResources().openRawResource(R.drawable.splash);
+		bmp = BitmapFactory.decodeStream(is);
 	}
 
 	private void initialize() {
@@ -34,6 +39,7 @@ public class Camera extends Activity implements View.OnClickListener {
 		ib.setOnClickListener(this);
 	}
 
+	@SuppressWarnings("deprecation")
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.bSetWall:
