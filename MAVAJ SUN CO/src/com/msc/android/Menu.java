@@ -8,26 +8,28 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class Menu extends ListActivity {
-	
-	String myClassList[]={"Counter","Menu","Splash","Text","Menu 05","Menu 04"};
-	
+
+	String myClassList[] = { "Counter", "Menu", "Splash", "Text", "Email",
+			"Camera" };
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setListAdapter(new ArrayAdapter<String>(Menu.this,android.R.layout.simple_list_item_1, myClassList));
+		setListAdapter(new ArrayAdapter<String>(Menu.this,
+				android.R.layout.simple_list_item_1, myClassList));
 	}
-	
+
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		super.onListItemClick(l, v, position, id);
- 	Class myClass;
+		Class myClass;
 		try {
-			myClass = Class.forName("com.msc.android."+myClassList[position]);
-			Intent myIntent=new Intent(Menu.this,myClass);
+			myClass = Class.forName("com.msc.android." + myClassList[position]);
+			Intent myIntent = new Intent(Menu.this, myClass);
 			startActivity(myIntent);
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
-		}		
+		}
 	}
 
 }

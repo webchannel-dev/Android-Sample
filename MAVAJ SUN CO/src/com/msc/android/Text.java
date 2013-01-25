@@ -54,10 +54,24 @@ public class Text extends Activity {
 
 					display.setText("Crazy Man");
 					display.setTextSize(crazy.nextInt(75));
-					display.setTextColor(Color.rgb(crazy.nextInt(256),crazy.nextInt(256),crazy.nextInt(256)));
+					display.setTextColor(Color.rgb(crazy.nextInt(256),
+							crazy.nextInt(256), crazy.nextInt(256)));
+					switch (crazy.nextInt(3)) {
+					case 0:
+						display.setGravity(Gravity.LEFT);
+						break;
+					case 1:
+						display.setGravity(Gravity.CENTER);
+						break;
+					case 2:
+						display.setGravity(Gravity.RIGHT);
+						break;
+					}
+
 				} else {
 					display.setText("invalid");
 					display.setTextColor(Color.BLUE);
+					display.setTextColor(Color.WHITE);
 				}
 
 			}
