@@ -53,6 +53,35 @@
             android:label="@string/title_activity_counter"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name=".Data"
+            android:label="@string/title_activity_counter"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".OpenedClass"
+            android:label="@string/title_activity_counter"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".About"
+            android:label="@string/title_activity_counter" >
+            <intent-filter>
+                <action android:name="com.msc.android.Menu" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Prefs"
+            android:label="@string/title_activity_counter" >
+            <intent-filter>
+                <action android:name="com.msc.android.Prefes" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+F
     </application>
 
 </manifest>

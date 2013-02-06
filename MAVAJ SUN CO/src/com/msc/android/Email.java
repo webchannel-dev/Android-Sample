@@ -43,7 +43,7 @@ public class Email extends Activity implements View.OnClickListener {
 				+ stupidAction
 				+ ", that just really makes me crazy.  I just want to make you "
 				+ hatefulAct
-				+ ".  Welp, thats all I wanted to chit-chatter about, oh and"
+				+ ".  Welp, thats all I wanted to chit-chatter About, oh and"
 				+ out
 				+ ".  Oh also if you get bored you should check out www.MavajSunCo.com"
 				+ '\n' + "PS. Good luck and happy coding ...    ";
