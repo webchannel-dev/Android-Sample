@@ -25,11 +25,6 @@
         <activity
             android:name=".Counter"
             android:label="@string/title_activity_counter" >
-            <intent-filter>
-                <action android:name="com.msc.android.Counter" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Menu"
@@ -66,22 +61,21 @@
         <activity
             android:name=".About"
             android:label="@string/title_activity_counter" >
-            <intent-filter>
-                <action android:name="com.msc.android.Menu" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Prefs"
             android:label="@string/title_activity_counter" >
-            <intent-filter>
-                <action android:name="com.msc.android.Prefes" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
-F
+        <activity
+            android:name=".GFX"
+            android:label="@string/title_activity_counter"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Calculator"
+            android:label="@string/title_activity_counter"
+            android:screenOrientation="portrait" >
+        </activity>
     </application>
 
 </manifest>
